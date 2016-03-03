@@ -1,0 +1,68 @@
+/**<
+@file   Results.txt
+@author Chowdhury:Nrimoni:A00371596:csc34127
+@version 1.0
+@date   2014-06-14
+@brief  Results of experiment to determine which sorting method to prefer
+        for longer or shorter lists -- insertion sort, or shell sort.
+
+
+*/
+
+
+Executive Summary
+=================
+
+Based on my results, I recommend the following:
+
+  - Insertion sort should be used for lists of 9 or less elements.
+  - Quick sort should be used for lists of 10 or more elements.
+
+Experiment #1
+=============
+ Length       Insertion Wins           Shell Wins
+ ------       --------------           ----------
+      1                    0                    0
+      8                   65                   35
+     15                    2                   98
+     22                    0                  100
+     29                    0                  100
+     36                    0                  100
+     43                    0                  100
+     50                    0                  100
+
+The cross-over point appears to be between 8 and 15, but closer to 15.  
+We'll use 5-25 as the range for experiment #2.
+
+
+Experiment #2
+=============
+
+ Length       Insertion Wins           Shell Wins
+ ------       --------------           ----------
+      5                  469                  149
+      6                  389                  314
+      7                  497                  503
+      8                  673                  327
+      9                  441                  381
+     10                  369                  631
+     11                  221                  672
+     12                  187                  718
+     13                  163                  837
+     14                   56                  913
+     15                   43                  957
+     16                  181                  819
+     17                  126                  874
+     18                   34                  949
+     19                   18                  973
+     20                   19                  981
+     21                    9                  991
+     22                    4                  994
+     23                    0                 1000
+     24                    4                  993
+     25                    3                  996
+
+Insertion sort won 55% or more of the trials for lengths 9 
+or less, while shell sort won 55% or more of the trials for
+all lengths 10 or more.  
+--------------------------------------------------------------
